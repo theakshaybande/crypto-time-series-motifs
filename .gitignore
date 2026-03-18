@@ -1,0 +1,15 @@
+# Python cache and environment artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Large local data artifacts
+data/raw/**/*.parquet
+data/processed/**/*.parquet
+data/interim/**/*.parquet
+
+# Optional executed notebook exports
+*.executed.ipynb

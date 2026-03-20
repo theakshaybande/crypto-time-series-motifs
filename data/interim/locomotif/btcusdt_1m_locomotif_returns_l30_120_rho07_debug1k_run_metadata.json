@@ -1,0 +1,65 @@
+{
+  "experiment_name": "btcusdt_1m_locomotif_returns_l30_120_rho07_debug1k",
+  "run_timestamp_utc": "2026-03-20T11:39:04.377244+00:00",
+  "dataset_path": "C:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\data\\processed\\crypto\\1min\\BTCUSDT_1m_processed.parquet",
+  "dataset_name": "BTCUSDT_1m_processed",
+  "sample_name": "BTCUSDT_1m",
+  "feature_mode": "returns",
+  "feature_tag": "returns",
+  "row_counts": {
+    "before_cleaning": 4502648,
+    "after_cleaning": 4502647,
+    "analyzed": 1000
+  },
+  "requested_features": [
+    "log_return"
+  ],
+  "selected_features": [
+    "log_return"
+  ],
+  "feature_source_map": {
+    "log_return": "log_return"
+  },
+  "skipped_optional_features": [],
+  "parameters": {
+    "l_min": 30,
+    "l_max": 120,
+    "rho": 0.7,
+    "overlap": 0.1,
+    "warping": true,
+    "nb": 1
+  },
+  "debug_slice_info": {
+    "debug_mode": true,
+    "debug_rows_requested": 1000
+  },
+  "motif_output_structure": {
+    "container_type": "list",
+    "length": 1,
+    "first_item_type": "tuple",
+    "first_item_preview": "((107, 140), [(np.int32(107), np.int32(140)), (np.int32(351), np.int32(385)), (np.int32(252), np.int32(284)), (np.int32(283), np.int32(316)), (np.int32(390), np.int32(422)), (np.int32(154), np.int32(189)), (np.int32(756), np.int32(793)), (np.int32(569), np.int32(605)), (np.int32(532), np.int32(568))..."
+  },
+  "index_convention": "start_idx is inclusive and end_idx is exclusive, matching LoCoMotif segment tuples.",
+  "package_versions": {
+    "dtai-locomotif": "0.2.0",
+    "scikit-learn": "1.8.0"
+  },
+  "feature_matrix_shape": [
+    1000,
+    1
+  ],
+  "standardized_matrix_shape": [
+    1000,
+    1
+  ],
+  "run_summary": {
+    "total_motif_sets_found": 1.0,
+    "total_motif_occurrences": 9.0,
+    "average_motif_length": 34.22222222222222,
+    "median_motif_length": 34.0,
+    "min_motif_length": 32.0,
+    "max_motif_length": 37.0,
+    "number_of_rows_analyzed": 1000.0,
+    "number_of_channels_used": 1.0
+  }
+}

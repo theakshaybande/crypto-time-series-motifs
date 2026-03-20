@@ -1,0 +1,2 @@
+total_motif_sets_found,total_motif_occurrences,average_motif_length,median_motif_length,min_motif_length,max_motif_length,number_of_rows_analyzed,number_of_channels_used
+1,3,52.0,53.0,46,57,500,5

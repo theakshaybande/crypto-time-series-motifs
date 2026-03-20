@@ -1,0 +1,77 @@
+{
+  "experiment_name": "btcusdt_1m_locomotif_main_l30_120_rho08_debug500",
+  "run_timestamp_utc": "2026-03-20T11:40:33.236139+00:00",
+  "dataset_path": "C:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\data\\processed\\crypto\\1min\\BTCUSDT_1m_processed.parquet",
+  "dataset_name": "BTCUSDT_1m_processed",
+  "sample_name": "BTCUSDT_1m",
+  "feature_mode": "main",
+  "feature_tag": "main",
+  "row_counts": {
+    "before_cleaning": 4502648,
+    "after_cleaning": 4502408,
+    "analyzed": 500
+  },
+  "requested_features": [
+    "log_return",
+    "vol_30m",
+    "vol_60m",
+    "vol_240m",
+    "log_volume"
+  ],
+  "selected_features": [
+    "log_return",
+    "vol_30m",
+    "vol_60m",
+    "vol_240m",
+    "log_volume"
+  ],
+  "feature_source_map": {
+    "log_return": "log_return",
+    "vol_30m": "volatility_30m",
+    "vol_60m": "volatility_60m",
+    "vol_240m": "volatility_240m",
+    "log_volume": "volume"
+  },
+  "skipped_optional_features": [],
+  "parameters": {
+    "l_min": 30,
+    "l_max": 120,
+    "rho": 0.8,
+    "overlap": 0.1,
+    "warping": true,
+    "nb": 1
+  },
+  "debug_slice_info": {
+    "debug_mode": true,
+    "debug_rows_requested": 500
+  },
+  "motif_output_structure": {
+    "container_type": "list",
+    "length": 1,
+    "first_item_type": "tuple",
+    "first_item_preview": "((220, 273), [(np.int32(220), np.int32(273)), (np.int32(270), np.int32(316)), (np.int32(323), np.int32(380))])"
+  },
+  "index_convention": "start_idx is inclusive and end_idx is exclusive, matching LoCoMotif segment tuples.",
+  "package_versions": {
+    "dtai-locomotif": "0.2.0",
+    "scikit-learn": "1.8.0"
+  },
+  "feature_matrix_shape": [
+    500,
+    5
+  ],
+  "standardized_matrix_shape": [
+    500,
+    5
+  ],
+  "run_summary": {
+    "total_motif_sets_found": 1.0,
+    "total_motif_occurrences": 3.0,
+    "average_motif_length": 52.0,
+    "median_motif_length": 53.0,
+    "min_motif_length": 46.0,
+    "max_motif_length": 57.0,
+    "number_of_rows_analyzed": 500.0,
+    "number_of_channels_used": 5.0
+  }
+}

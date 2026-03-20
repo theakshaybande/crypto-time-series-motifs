@@ -6,3 +6,5 @@ jupyter
 requests
 python-dateutil
 stumpy
+scikit-learn
+dtai-locomotif

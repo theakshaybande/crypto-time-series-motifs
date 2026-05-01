@@ -1,0 +1,3 @@
+analysis_name,target_column,rows_used,window_minutes,top_k_requested,top_k_extracted,cache_used,elapsed_seconds,global_mp_min,global_mp_mean,global_mp_median,top_motif_min_distance,top_motif_mean_distance,top_motif_median_distance,top_motif_std_distance
+raw_close,close,10080,60,15,15,True,0.0,1.5760775674355556,3.7606450627511467,3.6509429364440416,1.5760775674355556,2.0211749591595765,2.081173264670398,0.179771785730449
+log_return,log_return,10080,60,15,15,False,0.1072232723236084,5.700572355482574,7.81681701189678,7.868744116195859,5.700572355482574,6.739009255618073,6.813526417736352,0.3972251820207334

@@ -1,0 +1,4 @@
+representation,target,features,rows_used,window_minutes,top_k,global_mp_mean,global_mp_median,top_motif_min_distance,top_motif_mean_distance,top_motif_median_distance
+raw_close,close,close,10080,60,15,3.7606450627511467,3.6509429364440416,1.5760775674355556,2.0211749591595765,2.081173264670398
+log_return,log_return,log_return,10080,60,15,7.81681701189678,7.868744116195859,5.700572355482574,6.739009255618073,6.813526417736352
+multivariate,log_return + volatility_60m,log_return + volatility_60m,10080,60,15,5.986036962551967,5.87865141796596,4.28215833311586,4.7475214066565945,4.796014984054693

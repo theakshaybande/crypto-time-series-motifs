@@ -1,0 +1,24 @@
+{
+  "asset": "BTCUSDT",
+  "run_mode": "quick",
+  "feature": "log_return",
+  "window_size": 60,
+  "top_k": 3,
+  "rows_used": 20160,
+  "slice_start": "2026-03-02 00:00:00+00:00",
+  "slice_end": "2026-03-15 23:59:00+00:00",
+  "cache_used": true,
+  "elapsed_seconds": 0.0,
+  "data_path": "C:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\data\\processed\\crypto\\1min\\BTCUSDT_1m_processed.parquet",
+  "cache_path": "C:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\data\\processed\\matrix_profiles\\BTCUSDT_stump_log_return_m60_quick.npz",
+  "plots_saved": [
+    "C:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\plots\\BTCUSDT_log_return_motif_windows_quick.png",
+    "C:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\plots\\BTCUSDT_log_return_mp_plot_quick.png",
+    "C:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\plots\\BTCUSDT_log_return_overlay_rank1_quick.png",
+    "C:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\plots\\BTCUSDT_log_return_overlay_rank2_quick.png",
+    "C:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\plots\\BTCUSDT_log_return_overlay_rank3_quick.png"
+  ],
+  "additional_outputs": {
+    "raw_close_motifs": "C:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\BTCUSDT_close_motifs_quick.csv"
+  }
+}

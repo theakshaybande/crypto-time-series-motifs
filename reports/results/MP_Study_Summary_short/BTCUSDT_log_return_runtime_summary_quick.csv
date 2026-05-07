@@ -1,0 +1,3 @@
+run_mode,rows_used,feature,window_size,top_k,cache_used,elapsed_seconds
+quick,20160,log_return,60,3,True,0.0
+quick,20160,close,60,3,True,0.0

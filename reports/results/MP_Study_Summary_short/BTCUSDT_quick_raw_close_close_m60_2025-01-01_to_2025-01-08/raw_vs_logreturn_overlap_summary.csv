@@ -1,0 +1,6 @@
+tolerance_minutes,raw_events_total,log_return_events_total,raw_events_matched,log_return_events_matched,raw_match_rate_pct,log_return_match_rate_pct
+15,30,30,3,3,10.0,10.0
+30,30,30,4,4,13.333333333333334,13.333333333333334
+60,30,30,7,7,23.333333333333332,23.333333333333332
+180,30,30,23,18,76.66666666666667,60.0
+360,30,30,30,18,100.0,60.0

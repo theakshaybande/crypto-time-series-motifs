@@ -1,0 +1,85 @@
+{
+  "current_run": {
+    "asset": "BTCUSDT",
+    "run_mode": "quick",
+    "analysis_type": "raw_close",
+    "target_column": "close",
+    "start_date": "2025-01-01",
+    "end_date": "2025-01-08",
+    "window_minutes": 60,
+    "top_k_initial": 3,
+    "top_k_extended": 15,
+    "rows_used": 10080,
+    "subsequence_count": 10021
+  },
+  "timeframe_scaling_strategy": {
+    "quick_mode": "Use 7 days for fast debugging and visualization.",
+    "medium_mode": "Use 1 to 3 months for more stable motif statistics.",
+    "full_mode": "Use full available history only after caching and validation are working.",
+    "recommended_full_data_strategy": [
+      "Avoid blindly running one huge full-history experiment first.",
+      "Split full data by year, month, or market regime.",
+      "Compute and cache Matrix Profiles separately for each slice.",
+      "Extract top motifs per slice.",
+      "Compare motif recurrence across slices, regimes, assets, and features.",
+      "Use timestamp overlap, consistency score, and motif-space distance for comparison."
+    ]
+  },
+  "future_experiment_grid": {
+    "assets": [
+      "BTCUSDT",
+      "ETHUSDT"
+    ],
+    "representations": [
+      "raw_close",
+      "log_return",
+      "multivariate_log_return_volatility_60m"
+    ],
+    "window_minutes": [
+      15,
+      30,
+      60,
+      120
+    ],
+    "top_k": [
+      15
+    ],
+    "regime_conditioning_later": [
+      "low_volatility",
+      "medium_volatility",
+      "high_volatility",
+      "HMM_regimes"
+    ]
+  },
+  "cache_design": {
+    "cache_directory": "c:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\data\\processed\\matrix_profiles",
+    "cache_key_components": [
+      "asset",
+      "analysis_type",
+      "target_column_or_feature_set",
+      "window_minutes",
+      "run_mode",
+      "start_date",
+      "end_date"
+    ],
+    "why_cache_matters": [
+      "Matrix Profile computation is expensive on minute-level data.",
+      "Each configuration is saved once and reused later.",
+      "This makes window-size sweeps and representation comparisons practical.",
+      "It also makes the research reproducible."
+    ]
+  },
+  "saved_output_files": [
+    "c:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\BTCUSDT_quick_raw_close_close_m60_2025-01-01_to_2025-01-08\\top_k_motifs_current.csv",
+    "c:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\BTCUSDT_quick_raw_close_close_m60_2025-01-01_to_2025-01-08\\top_15_motifs.csv",
+    "c:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\BTCUSDT_quick_raw_close_close_m60_2025-01-01_to_2025-01-08\\motif_movement_statistics.csv",
+    "c:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\BTCUSDT_quick_raw_close_close_m60_2025-01-01_to_2025-01-08\\motif_consistency_scores.csv",
+    "c:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\BTCUSDT_quick_raw_close_close_m60_2025-01-01_to_2025-01-08\\window_size_sensitivity_summary.csv",
+    "c:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\BTCUSDT_quick_raw_close_close_m60_2025-01-01_to_2025-01-08\\raw_vs_logreturn_summary.csv",
+    "c:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\BTCUSDT_quick_raw_close_close_m60_2025-01-01_to_2025-01-08\\raw_vs_logreturn_overlap_summary.csv",
+    "c:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\BTCUSDT_quick_raw_close_close_m60_2025-01-01_to_2025-01-08\\raw_vs_logreturn_matched_pairs.csv",
+    "c:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\BTCUSDT_quick_raw_close_close_m60_2025-01-01_to_2025-01-08\\multivariate_top_15_motifs.csv",
+    "c:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\BTCUSDT_quick_raw_close_close_m60_2025-01-01_to_2025-01-08\\representation_comparison_summary.csv",
+    "c:\\Users\\learn\\OneDrive\\Desktop\\Masters Thesis\\MastersThesis\\reports\\results\\MP_Study_Summary_short\\BTCUSDT_quick_raw_close_close_m60_2025-01-01_to_2025-01-08\\combined_representation_motif_distances.csv"
+  ]
+}
